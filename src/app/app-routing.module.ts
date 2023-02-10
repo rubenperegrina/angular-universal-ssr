@@ -13,7 +13,12 @@ const routes: Routes = [
   {
     path: 'about',
     loadChildren: () => import('./modules/about/about.module').then(m => m.AboutModule)
-  }
+  },
+  {
+    path: '',
+    redirectTo: '/user-list',
+    pathMatch: 'full'
+  },
 ];
 
 @NgModule({
