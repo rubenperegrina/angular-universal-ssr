@@ -7,10 +7,10 @@
     "build-dev": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "dev:ssr": "ng run test:serve-ssr",
+    "dev:ssr": "ng run angular-universal-ssr:serve-ssr",
     "serve:ssr": "node dist/angular-universal-ssr/server/main.js",
-    "build:ssr": "ng build && ng run test:server",
-    "prerender": "ng run test:prerender",
+    "build:ssr": "ng build && ng run angular-universal-ssr:server",
+    "prerender": "ng run angular-universal-ssr:prerender",
     "vercel-build": "npm run build:ssr"
   },
   "private": true,
